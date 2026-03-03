@@ -7,7 +7,7 @@ while True:
     response = qwen_generate(user_input)
     response_data = json.loads(response)
 
-    print(response_data["arguments"]["query"])
+    print("Catched query: ", response_data["arguments"]["query"])
 
     query = response_data["arguments"]["query"]
     response = requests.get(f"http://localhost:8000/search?q={query}")
