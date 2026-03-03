@@ -9,3 +9,6 @@ accelerate
 bitsandbytes
 safetensors
 sentencepiece
+datasets
+trl
+requests

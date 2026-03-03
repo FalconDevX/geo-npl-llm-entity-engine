@@ -1,26 +1,22 @@
-from fastapi import FastAPI, Depends
-from sqlalchemy.orm import Session
-from database import SessionLocal
+import json
+import requests
+from qwen_chat import qwen_generate
 
-app = FastAPI()
+while True:
+    user_input = input("Enter your message: ")
+    response = qwen_generate(user_input)
+    response_data = json.loads(response)
+
+    print(response_data["arguments"]["query"])
+
+    query = response_data["arguments"]["query"]
+    response = requests.get(f"http://localhost:8000/search?q={query}")
+    data = response.json()
 
 
-def get_db():
-    db = SessionLocal()
-    try:
-        yield db
-    finally:
-        db.close()
+    print("Miejsce: ", query)
+    print("Kod teryt : ", data[0]["kod"])
 
-
-from sqlalchemy import text
-
-@app.get("/search")
-def search(q: str, db: Session = Depends(get_db)):
-
-    result = db.execute(
-        text("SELECT * FROM search_admin(:q)"),
-        {"q": q}
-    )
-
-    return result.mappings().all()
+    if user_input.lower() in ["exit", "quit"]:
+        print("bye")
+        break
