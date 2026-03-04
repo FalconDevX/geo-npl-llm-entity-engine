@@ -24,10 +24,10 @@ def find_geo_match(user_input, top_k=3):
             "nazwa": doc.nazwa,
             "kod": doc.kod,
             "typ": doc.typ,
-            "similarity": 1 - float(doc.score)  # COSINE: 0=identyczne, 1=różne
+            "similarity": 1 - float(doc.score)  
         }
         for doc in res.docs
     ]
 
-data = find_geo_match("Kraków miasto")
+data = find_geo_match("Warszawa gmina")
 print(data)
