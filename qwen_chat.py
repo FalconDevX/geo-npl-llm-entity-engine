@@ -1,6 +1,8 @@
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from peft import PeftModel
+from tools_def import tools
+
 
 base_model_name = "Qwen/Qwen2.5-3B-Instruct"
 lora_path = "./qwen-gis-lora"
@@ -17,32 +19,31 @@ base_model = AutoModelForCausalLM.from_pretrained(
 model = PeftModel.from_pretrained(base_model, lora_path)
 model.eval()
 
-def qwen_generate(user_input: str) -> str:
-
+def qwen_generate(user_input: str):
     messages = [
+        {"role": "system", "content": "Jesteś pomocnikiem GIS. Masz dostęp do narzędzi. Jeśli użytkownik pyta o miejsce, użyj funkcji."},
         {"role": "user", "content": user_input}
     ]
 
     text = tokenizer.apply_chat_template(
         messages,
+        tools=tools, 
         tokenize=False,
         add_generation_prompt=True
     )
 
     inputs = tokenizer(text, return_tensors="pt").to(device)
 
-    with torch.no_grad():
-        outputs = model.generate(
-            **inputs,
-            max_new_tokens=300,
-            temperature=0.7,
-            top_p=0.9,
-            do_sample=True
-        )
+    outputs = model.generate(
+        **inputs,
+        max_new_tokens=512,
+        temperature=0.1, 
+        do_sample=False 
+    )
 
-    response = tokenizer.decode(outputs[0], skip_special_tokens=True)
-
-    # opcjonalnie usuń prompt z odpowiedzi
-    response = response.split("assistant")[-1].strip()
-
+    generated_ids = [
+        output_ids[len(input_ids):] for input_ids, output_ids in zip(inputs.input_ids, outputs)
+    ]
+    response = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
+    
     return response

@@ -1,644 +1,1286 @@
 [
-    {
-      "messages": [
-        {"role": "user", "content": "Pokaż mi granice gminy Warszawa"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Warszawa\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Gdzie leży powiat krakowski?"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"powiat krakowski\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Chciałbym zobaczyć mapę województwa mazowieckiego"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"województwo mazowieckie\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Czy możesz wyszukać Zamość na mapie?"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Zamość\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Chodzi mi o gminę w Krakowie, pokaż mi to"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Kraków\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "znajdz mi Wroclaw na mapie proszę"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Wrocław\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Interesuje mnie obszar powiatu poznańskiego"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"powiat poznański\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Pokaż województwo śląskie"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"województwo śląskie\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "co wiesz o Gdańsku, pokaż mi go na mapie"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Gdańsk\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Szukam informacji o gminie Łódź"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Łódź\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Hej, możesz mi pokazać powiat w Zamościu?"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Zamość\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Wyszukaj jednostkę administracyjną Szczecin"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Szczecin\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Potrzebuję znaleźć gminę Lublin, pilne!"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Lublin\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "pokaż mi bydgoszcz"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Bydgoszcz\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Czy mógłbyś wyszukać województwo podkarpackie na mapie GIS?"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"województwo podkarpackie\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Mam pytanie dotyczące Katowic, pokaż mi ten obszar"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Katowice\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "gmina Białystok - pokaż na mapie"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Białystok\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Gdzie dokładnie leży powiat bialski?"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"powiat bialski\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Chcę obejrzeć mapę Rzeszowa"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Rzeszów\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "wyszukaj Kielce proszę"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Kielce\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Pokaż mi obszar w Toruniu, interesuje mnie centrum"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Toruń\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Szukam powiatu olsztyńskiego na mapie"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"powiat olsztyński\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Pokaż Opole"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Opole\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Interesuje mnie województwo warmińsko-mazurskie"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"województwo warmińsko-mazurskie\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "jak wygląda gmina Gdynia na mapie?"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Gdynia\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Proszę wyszukać Częstochowę"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Częstochowa\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Chciałem zapytać o powiat radomski, pokaż mi go"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"powiat radomski\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Jestem zainteresowany gminą w Sosnowcu"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Sosnowiec\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Wyszukaj proszę Gliwice"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Gliwice\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "pokaż mi woj. lubelskie"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"województwo lubelskie\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Szukam Zabrza na mapie, dzięki"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Zabrze\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Czy jest możliwe zobaczenie granic powiatu tarnowskiego?"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"powiat tarnowski\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Pokaż mi granice Bytomia"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Bytom\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Hej, chodzi mi o mapę Bielska-Białej"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Bielsko-Biała\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Zależy mi na powiecie legnickim, pokaż"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"powiat legnicki\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Wrocław czy Kraków - pokaż mi Wrocław"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Wrocław\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Zlokalizuj gminę Olsztyn na mapie GIS"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Olsztyn\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "szukam ruda slaska"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Ruda Śląska\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Pokaż obszar administracyjny Nowego Sącza"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Nowy Sącz\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Mapa powiatu wielickiego - pokaż mi"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"powiat wielicki\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "województwo małopolskie - chcę zobaczyć"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"województwo małopolskie\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Hej! Znajdź mi Tarnów na mapie proszę"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Tarnów\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Potrzebuje znalezc Chelm na mapie"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Chełm\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Pokaż mi granice powiatu siedleckiego"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"powiat siedlecki\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Interesuje mnie gmina Włocławek"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Włocławek\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Wyszukaj powiat płocki na mapie"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"powiat płocki\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Chcę zobaczyć jak wygląda Grudziądz"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Grudziądz\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Czy mógłbyś pokazać mi gminę Elbląg?"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Elbląg\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "szukam powiatu slupskiego"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"powiat słupski\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Zlokalizuj Płock dla mnie"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Płock\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Mam pytanko - jak wygląda powiat wrocławski?"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"powiat wrocławski\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Wyszukaj Koszalin"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Koszalin\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Pokaż województwo kujawsko-pomorskie na mapie"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"województwo kujawsko-pomorskie\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Jestem z Lublina ale chcę zobaczyć Poznań"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Poznań\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Potrzebuję mapę Jelenj Góry"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Jelenia Góra\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "pokaż mi powiat suwalski"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"powiat suwalski\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Znajdź Zieloną Górę na mapie administracyjnej"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Zielona Góra\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Chcę zobaczyć województwo lubuskie"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"województwo lubuskie\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Hej, pokaż Przemyśl na mapie"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Przemyśl\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Szukam gminy w Radomiu"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Radom\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Pokaż powiat lubliniecki na mapie GIS proszę"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"powiat lubliniecki\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Chciałbym zobaczyć mapę Suwałk"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Suwałki\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "pokaż mi Lomze proszę, chodzi o miasto"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Łomża\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Interesuje mnie województwo świętokrzyskie"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"województwo świętokrzyskie\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Gdzie jest powiat nowosądecki? Pokaż mi"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"powiat nowosądecki\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Hej, szukam Jastrzębia-Zdroju na mapie"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Jastrzębie-Zdrój\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "pokaż mi Province... tzn województwo opolskie"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"województwo opolskie\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Znajdź Konin"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Konin\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Czy mógłbyś pokazać powiat gdański na mapie?"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"powiat gdański\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Potrzebna mi mapa Stalowej Woli"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Stalowa Wola\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Wyszukaj gminę Tychów"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Tychy\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "pokaż mi miasteczko Oświęcim na mapie"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Oświęcim\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Interesuje mnie jednostka administracyjna Rzeszów, pokaż"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Rzeszów\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "powiat żywiecki - chcę zobaczyć na mapie"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"powiat żywiecki\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Znajdź Piłę na mapie adminstracyjnej"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Piła\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Hej! Szukam Wałbrzycha"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Wałbrzych\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Czy możesz pokazać powiat kluczborski?"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"powiat kluczborski\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "województwo podlaskie - pokaż mi je"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"województwo podlaskie\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Wyszukaj mi Mysłowice"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Mysłowice\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Szukam obszaru gminy w Chorzowie"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Chorzów\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Pokaż granice Świętochłowic na mapie"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Świętochłowice\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "powiat będziński - znajdź na GIS"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"powiat będziński\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Mapa administracyjna Sieradza"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Sieradz\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "pokaż Głogów"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Głogów\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Chcę wiedzieć gdzie leży gmina Leszno"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Leszno\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Pokaż mi województwo zachodniopomorskie"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"województwo zachodniopomorskie\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Znajdź powiat kędzierzyńsko-kozielski"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"powiat kędzierzyńsko-kozielski\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Hej, pokaż mi Piotrków Trybunalski"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Piotrków Trybunalski\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "szukam Ostrowia Mazowieckiego"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Ostrów Mazowiecka\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Potrzebuję zobaczyć mapę Zduńskiej Woli"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Zduńska Wola\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Znajdź mi Ostrowiec Świętokrzyski na mapie"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Ostrowiec Świętokrzyski\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Mapa powiatu jasielskiego, prosze"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"powiat jasielski\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Pokaż mi Nowy Targ na mapie"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Nowy Targ\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "chce zobaczyc powiat ostrolecki"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"powiat ostrołęcki\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Wyszukaj jednostkę administracyjną Mielec"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Mielec\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Pokaż mi granice Siemianowic Śląskich"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Siemianowice Śląskie\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Gmina Dąbrowa Górnicza - pokaż mi ją"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Dąbrowa Górnicza\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Hej, szukam informacji o Jaworznie"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Jaworzno\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Pokaż powiat nyski na mapie administracyjnej"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"powiat nyski\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "potrzebuje mapy Zgorzelca"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Zgorzelec\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Znajdź mi na mapie powiat gostyński"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"powiat gostyński\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Mam na myśli Inowrocław, pokaż proszę"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Inowrocław\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "województwo dolnośląskie - chciałbym zobaczyć"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"województwo dolnośląskie\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Hej! Pokaż mi Nową Sól"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Nowa Sól\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "szukam gminy Legnica"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Legnica\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Pokaż granice administracyjne Krakowa, nie Poznania"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"Kraków\"}}"}
-      ]
-    },
-    {
-      "messages": [
-        {"role": "user", "content": "Znajdź powiat kaliski na mapie"},
-        {"role": "assistant", "content": "{\"function\": \"search_admin\", \"arguments\": {\"query\": \"powiat kaliski\"}}"}
-      ]
-    }
-  ]
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Pokaż mi granice gminy Warszawa"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Warszawa\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Gdzie leży powiat krakowski?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"powiat krakowski\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Chciałbym zobaczyć mapę województwa mazowieckiego"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"województwo mazowieckie\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Czy możesz wyszukać Zamość na mapie?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Zamość\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Chodzi mi o gminę w Krakowie, pokaż mi to"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Kraków\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "znajdz mi Wroclaw na mapie proszę"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Wrocław\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Interesuje mnie obszar powiatu poznańskiego"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"powiat poznański\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Pokaż województwo śląskie"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"województwo śląskie\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "co wiesz o Gdańsku, pokaż mi go na mapie"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Gdańsk\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Szukam informacji o gminie Łódź"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Łódź\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hej, możesz mi pokazać powiat w Zamościu?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Zamość\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Wyszukaj jednostkę administracyjną Szczecin"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Szczecin\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Potrzebuję znaleźć gminę Lublin, pilne!"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Lublin\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "pokaż mi bydgoszcz"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Bydgoszcz\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Czy mógłbyś wyszukać województwo podkarpackie na mapie GIS?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"województwo podkarpackie\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Mam pytanie dotyczące Katowic, pokaż mi ten obszar"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Katowice\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "gmina Białystok - pokaż na mapie"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Białystok\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Gdzie dokładnie leży powiat bialski?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"powiat bialski\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Chcę obejrzeć mapę Rzeszowa"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Rzeszów\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "wyszukaj Kielce proszę"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Kielce\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Pokaż mi obszar w Toruniu, interesuje mnie centrum"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Toruń\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Szukam powiatu olsztyńskiego na mapie"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"powiat olsztyński\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Pokaż Opole"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Opole\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Interesuje mnie województwo warmińsko-mazurskie"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"województwo warmińsko-mazurskie\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "jak wygląda gmina Gdynia na mapie?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Gdynia\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Proszę wyszukać Częstochowę"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Częstochowa\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Chciałem zapytać o powiat radomski, pokaż mi go"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"powiat radomski\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Jestem zainteresowany gminą w Sosnowcu"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Sosnowiec\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Wyszukaj proszę Gliwice"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Gliwice\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "pokaż mi woj. lubelskie"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"województwo lubelskie\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Szukam Zabrza na mapie, dzięki"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Zabrze\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Czy jest możliwe zobaczenie granic powiatu tarnowskiego?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"powiat tarnowski\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Pokaż mi granice Bytomia"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Bytom\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hej, chodzi mi o mapę Bielska-Białej"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Bielsko-Biała\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Zależy mi na powiecie legnickim, pokaż"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"powiat legnicki\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Wrocław czy Kraków - pokaż mi Wrocław"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Wrocław\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Zlokalizuj gminę Olsztyn na mapie GIS"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Olsztyn\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "szukam ruda slaska"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Ruda Śląska\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Pokaż obszar administracyjny Nowego Sącza"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Nowy Sącz\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Mapa powiatu wielickiego - pokaż mi"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"powiat wielicki\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "województwo małopolskie - chcę zobaczyć"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"województwo małopolskie\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hej! Znajdź mi Tarnów na mapie proszę"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Tarnów\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Potrzebuje znalezc Chelm na mapie"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Chełm\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Pokaż mi granice powiatu siedleckiego"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"powiat siedlecki\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Interesuje mnie gmina Włocławek"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Włocławek\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Wyszukaj powiat płocki na mapie"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"powiat płocki\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Chcę zobaczyć jak wygląda Grudziądz"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Grudziądz\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Czy mógłbyś pokazać mi gminę Elbląg?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Elbląg\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "szukam powiatu slupskiego"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"powiat słupski\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Zlokalizuj Płock dla mnie"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Płock\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Mam pytanko - jak wygląda powiat wrocławski?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"powiat wrocławski\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Wyszukaj Koszalin"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Koszalin\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Pokaż województwo kujawsko-pomorskie na mapie"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"województwo kujawsko-pomorskie\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Jestem z Lublina ale chcę zobaczyć Poznań"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Poznań\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Potrzebuję mapę Jelenj Góry"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Jelenia Góra\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "pokaż mi powiat suwalski"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"powiat suwalski\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Znajdź Zieloną Górę na mapie administracyjnej"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Zielona Góra\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Chcę zobaczyć województwo lubuskie"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"województwo lubuskie\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hej, pokaż Przemyśl na mapie"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Przemyśl\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Szukam gminy w Radomiu"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Radom\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Pokaż powiat lubliniecki na mapie GIS proszę"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"powiat lubliniecki\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Chciałbym zobaczyć mapę Suwałk"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Suwałki\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "pokaż mi Lomze proszę, chodzi o miasto"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Łomża\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Interesuje mnie województwo świętokrzyskie"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"województwo świętokrzyskie\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Gdzie jest powiat nowosądecki? Pokaż mi"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"powiat nowosądecki\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hej, szukam Jastrzębia-Zdroju na mapie"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Jastrzębie-Zdrój\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "pokaż mi Province... tzn województwo opolskie"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"województwo opolskie\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Znajdź Konin"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Konin\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Czy mógłbyś pokazać powiat gdański na mapie?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"powiat gdański\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Potrzebna mi mapa Stalowej Woli"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Stalowa Wola\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Wyszukaj gminę Tychów"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Tychy\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "pokaż mi miasteczko Oświęcim na mapie"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Oświęcim\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Interesuje mnie jednostka administracyjna Rzeszów, pokaż"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Rzeszów\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "powiat żywiecki - chcę zobaczyć na mapie"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"powiat żywiecki\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Znajdź Piłę na mapie adminstracyjnej"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Piła\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hej! Szukam Wałbrzycha"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Wałbrzych\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Czy możesz pokazać powiat kluczborski?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"powiat kluczborski\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "województwo podlaskie - pokaż mi je"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"województwo podlaskie\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Wyszukaj mi Mysłowice"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Mysłowice\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Szukam obszaru gminy w Chorzowie"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Chorzów\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Pokaż granice Świętochłowic na mapie"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Świętochłowice\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "powiat będziński - znajdź na GIS"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"powiat będziński\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Mapa administracyjna Sieradza"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Sieradz\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "pokaż Głogów"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Głogów\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Chcę wiedzieć gdzie leży gmina Leszno"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Leszno\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Pokaż mi województwo zachodniopomorskie"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"województwo zachodniopomorskie\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Znajdź powiat kędzierzyńsko-kozielski"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"powiat kędzierzyńsko-kozielski\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hej, pokaż mi Piotrków Trybunalski"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Piotrków Trybunalski\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "szukam Ostrowia Mazowieckiego"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Ostrów Mazowiecka\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Potrzebuję zobaczyć mapę Zduńskiej Woli"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Zduńska Wola\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Znajdź mi Ostrowiec Świętokrzyski na mapie"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Ostrowiec Świętokrzyski\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Mapa powiatu jasielskiego, prosze"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"powiat jasielski\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Pokaż mi Nowy Targ na mapie"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Nowy Targ\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "chce zobaczyc powiat ostrolecki"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"powiat ostrołęcki\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Wyszukaj jednostkę administracyjną Mielec"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Mielec\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Pokaż mi granice Siemianowic Śląskich"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Siemianowice Śląskie\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Gmina Dąbrowa Górnicza - pokaż mi ją"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Dąbrowa Górnicza\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hej, szukam informacji o Jaworznie"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Jaworzno\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Pokaż powiat nyski na mapie administracyjnej"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"powiat nyski\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "potrzebuje mapy Zgorzelca"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Zgorzelec\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Znajdź mi na mapie powiat gostyński"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"powiat gostyński\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Mam na myśli Inowrocław, pokaż proszę"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Inowrocław\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "województwo dolnośląskie - chciałbym zobaczyć"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"województwo dolnośląskie\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hej! Pokaż mi Nową Sól"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Nowa Sól\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "szukam gminy Legnica"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Legnica\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Pokaż granice administracyjne Krakowa, nie Poznania"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"Kraków\"}}"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Znajdź powiat kaliski na mapie"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"function\": \"search_place_by_name\", \"arguments\": {\"query\": \"powiat kaliski\"}}"
+      }
+    ]
+  }
+]
