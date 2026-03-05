@@ -6,5 +6,15 @@ services:
     container_name: fastapi
     ports:
       - "8000:8000"
+    env_file:
+      - .env
+
+  postgis:
+    image: postgis/postgis:15-3.4
+    container_name: postgis
     environment:
-      DATABASE_URL: ${DATABASE_URL}
+      POSTGRES_USER: geo
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: geo
+    ports:
+      - "5432:5432"
