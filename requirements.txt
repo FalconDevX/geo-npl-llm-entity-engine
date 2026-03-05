@@ -1,7 +1,19 @@
+# API & web
 fastapi
-uvicorn
+uvicorn[standard]
+
+# Database
 sqlalchemy
 psycopg2-binary
+
+# Config & validation
+pydantic
+python-dotenv
+
+# HTTP
+requests
+
+# ML / NLP (Qwen, finetuning, embeddings)
 torch
 transformers
 peft
@@ -11,4 +23,9 @@ safetensors
 sentencepiece
 datasets
 trl
-requests
+numpy
+sentence-transformers
+
+# Redis & data
+redis
+polars

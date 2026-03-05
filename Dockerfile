@@ -1,10 +1,13 @@
-FROM python:3.11
+FROM python:3.11-slim
 
 WORKDIR /app
 
-COPY requirements.api.txt .
-RUN pip install --no-cache-dir -r requirements.api.txt
+RUN pip install uv
 
-COPY . .
+COPY requirements.txt .
 
-CMD ["uvicorn", "api:app", "--host", "0.0.0.0", "--port", "8000"]
+RUN uv pip install --system -r requirements.txt
+
+COPY app ./app
+
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
