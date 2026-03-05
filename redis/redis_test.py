@@ -29,5 +29,5 @@ def find_geo_match(user_input, top_k=3):
         for doc in res.docs
     ]
 
-data = find_geo_match("Warszawa gmina")
+data = find_geo_match("wojewodztwo lubelske")
 print(data)
