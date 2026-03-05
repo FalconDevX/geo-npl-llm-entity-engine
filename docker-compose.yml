@@ -8,13 +8,10 @@ services:
       - "8000:8000"
     env_file:
       - .env
+    networks:
+      - database_default
+    restart: always
 
-  postgis:
-    image: postgis/postgis:15-3.4
-    container_name: postgis
-    environment:
-      POSTGRES_USER: geo
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: geo
-    ports:
-      - "5432:5432"
+networks:
+  database_default:
+    external: true
