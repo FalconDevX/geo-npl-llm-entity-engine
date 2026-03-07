@@ -1,3 +1,4 @@
+import torch
 import redis
 import psycopg2
 import numpy as np
@@ -5,6 +6,8 @@ from sentence_transformers import SentenceTransformer
 from dotenv import load_dotenv
 import os
 from tqdm import tqdm
+
+print(torch.cuda.is_available())
 
 load_dotenv()
 
@@ -23,7 +26,7 @@ pg = psycopg2.connect(
 
 cursor = pg.cursor()
 
-model = SentenceTransformer("all-MiniLM-L6-v2")
+model = SentenceTransformer("BAAI/bge-m3", device="cuda")
 
 cursor.execute("""
 SELECT kod, text_for_vector
@@ -37,23 +40,29 @@ print("records:", len(rows))
 
 BATCH_SIZE = 256
 
-pipeline = redis_client.pipeline()
-
 for i in tqdm(range(0, len(rows), BATCH_SIZE)):
 
     batch = rows[i:i+BATCH_SIZE]
 
     texts = [x[1] for x in batch]
-    vectors = model.encode(texts, batch_size=64).astype(np.float32)
+
+    vectors = model.encode(
+        texts,
+        batch_size=64,
+        convert_to_numpy=True,
+        normalize_embeddings=True
+    )
+
+    pipeline = redis_client.pipeline()
 
     for (kod, text), vector in zip(batch, vectors):
 
         pipeline.hset(
             f"teryt:{kod}",
             mapping={
-                "kod": kod,
-                "text": text,
-                "vector": vector.tobytes()
+                "teryt": kod,
+                "text_for_vector": text,
+                "embedding": vector.astype(np.float32).tobytes()
             }
         )
 

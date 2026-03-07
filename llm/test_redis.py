@@ -4,7 +4,7 @@ import redis
 from dotenv import load_dotenv
 import os
 
-model = SentenceTransformer("all-MiniLM-L6-v2")
+model = SentenceTransformer("BAAI/bge-m3", device="cuda")
 
 load_dotenv()
 
