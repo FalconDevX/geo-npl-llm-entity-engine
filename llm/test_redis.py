@@ -14,11 +14,11 @@ redis_client = redis.Redis(
     db=os.getenv("REDIS_DB")
 )
 
-query = "warszawa"
+query = "powiat zamojski"
 
 vector = model.encode(query).astype(np.float32)
 
-q = "*=>[KNN 5 @vector $vec AS score]"
+q = "*=>[KNN 10 @embedding $vec AS score]"
 
 res = redis_client.ft("teryt_vector_idx").search(
     q,
@@ -26,4 +26,4 @@ res = redis_client.ft("teryt_vector_idx").search(
 )
 
 for doc in res.docs:
-    print(doc.text)
+    print(doc.text_for_vector)

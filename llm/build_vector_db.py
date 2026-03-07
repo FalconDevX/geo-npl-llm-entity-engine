@@ -14,7 +14,8 @@ load_dotenv()
 redis_client = redis.Redis(
     host=os.getenv("REDIS_HOST"),
     port=int(os.getenv("REDIS_PORT")),
-    db=int(os.getenv("REDIS_DB"))
+    db=int(os.getenv("REDIS_DB")),
+    password=os.getenv("REDIS_PASSWORD")
 )
 
 pg = psycopg2.connect(
@@ -38,7 +39,7 @@ rows = cursor.fetchall()
 
 print("records:", len(rows))
 
-BATCH_SIZE = 256
+BATCH_SIZE = 32
 
 for i in tqdm(range(0, len(rows), BATCH_SIZE)):
 

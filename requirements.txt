@@ -25,7 +25,9 @@ datasets
 trl
 numpy
 sentence-transformers
+tqdm
 
 # Redis & data
 redis
 polars
+unidecode
